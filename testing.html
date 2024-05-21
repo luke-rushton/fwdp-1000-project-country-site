@@ -2,7 +2,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="grid-wrap">
@@ -90,13 +90,14 @@
         aspect-ratio: initial;
     }
     #profile-elem{
-        background-image: url('/media/profile pic.jpg');
+        background-image: url('media/profile.jpg');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         grid-column: 9 / span 4;
         grid-row: 1 / span 4;
         aspect-ratio: initial;
+        transition: 0.5s;
     }
     #hanoi-elem{
         background-image: url('/media/hanoi.jpg');
@@ -130,6 +131,7 @@
         background-color: black;
         position: relative;
         outline: 1rem solid white;
+        transition: 0.5s;
     }
     .fill:hover{
         background-color: rgba(0, 0, 0, 0);

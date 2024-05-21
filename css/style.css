@@ -1,3 +1,68 @@
-.hello-world{
-    background-color: blue;
+h1{
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: white;
+    border: 5px solid white;
+    width: fit-content;
+    padding: 10px;
+    background-color: black;
+}
+a{
+    font-family: "Oswald", sans-serif;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    position: absolute;
+    /* do I want to align all the text, or have it sit centered? centered fits more with style, but its harder to read */
+    left: 5%;
+    bottom: 2%;
+    font-size: 1.25rem;
+}
+body{
+    background-image: url('../media/manhattan.webp');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: ce;
+    min-height: 100vh;
+}
+
+#site-nav{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+}
+#site-nav ul{
+    list-style: none;
+    padding: 1rem;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    align-items: end;
+}
+#site-nav li{
+    outline: 5px solid white;
+    background-color: black;
+    height: 2rem;
+    position: relative;
+}
+
+/* INDIVIDUAL NAV ELEMENTS */
+#site-nav #one{
+    height: 3rem;
+}
+#site-nav #two{
+    height: 2rem;
+}
+#site-nav #three{
+    height: 4rem;
+}
+#site-nav #four{
+    height: 3rem;
 }
