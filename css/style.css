@@ -1,12 +1,22 @@
-h1{
+h1, h2{
     font-family: "Oswald", sans-serif;
     font-weight: 700;
     font-size: 3rem;
     color: white;
-    border: 5px solid white;
+    outline: 5px solid white;
     width: fit-content;
     padding: 10px;
     background-color: black;
+}
+img{
+    height: auto;
+    max-width: 100%;
+
+    /* styling */
+    outline: 5px solid white;
+}
+h2{
+    font-size: 1.5rem;
 }
 a{
     font-family: "Oswald", sans-serif;
@@ -27,8 +37,15 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-origin: ce;
     min-height: 100vh;
+}
+p{ /* need to find a font for paragraphs! */
+    color: white;
+    font-family: "Shanti", sans-serif;
+    outline: 5px solid white;
+    width: fit-content;
+    padding: 10px;
+    background-color: black;
 }
 
 #site-nav{
@@ -36,6 +53,7 @@ body{
     bottom: 0px;
     width: 100%;
     left: 0px;
+    z-index: 200;
 }
 #site-nav ul{
     list-style: none;
@@ -65,4 +83,131 @@ body{
 }
 #site-nav #four{
     height: 3rem;
+}
+
+/* necessary for grid styling 
+
+#initial{
+    display: none;
+}
+
+@media (min-width: 40em){
+    body{
+        display: grid;
+        grid-template-columns: repeat(16, 1fr);
+        grid-auto-rows: 1fr;
+        grid-auto-flow: row;
+        margin: 0;
+        gap: 1rem;
+        min-height: 0;
+    }
+    h1{
+        width: 100%;
+        padding: 0px;
+        grid-column: 2 / span 6;
+        grid-row: 2 / span 2;
+        border: none;
+        display: block;
+        outline: 1rem solid white;
+        font-size: 6rem;
+        margin: 0px;
+    }
+    #initial{
+        display: block;
+        grid-column: 1 / span 1; 
+        grid-row: 1 / span 1;
+        background-color: rgba(0, 0, 0, 0);
+        aspect-ratio: 1;
+    }
+    header{
+        display: contents;
+    }
+    #site-nav{
+        display: contents;
+    }
+    #site-nav ul{
+        display: contents;
+    }
+    #site-nav li{
+        outline: 1rem solid white;
+    }
+    #site-nav #one{
+        height: auto;
+        grid-column: 11 / span 2;
+        grid-row: 3 / span 1;
+    }
+    #site-nav #two{
+        height: auto;
+        grid-column: 12 / span 2;
+        grid-row: 4 / span 2;
+    }
+    #site-nav #three{
+        height: auto;
+        grid-column: 11 / span 3;
+        grid-row: 6 / span 3
+    }
+    #site-nav #four{
+        height: auto;
+        grid-row: 9;
+        grid-column: 11 / span 2;
+    }
+}
+*/
+/*Towers page ids */
+/*consider, making classes for disjoint text blocks, can apply at will instead of individual ids */
+#intro{
+    width: 50%;
+    margin: auto;
+}
+.one-world{ /*gotta change this name */
+    position: relative;
+    margin: 1rem auto;
+    width: 50%;
+}
+.one-world img{
+    display: block;
+    width: 100%;
+}
+.one-world div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0;
+}
+.one-world div:hover{
+    opacity: 0.85;
+}
+.one-world h2{
+    outline: none;
+}
+.one-world p{
+    outline: none;
+}
+main{
+    padding-left: 1rem;
+    padding-bottom: 7rem;
+}
+
+#world{
+    left: -2rem
+}
+#empire{
+    left: 5rem;
+}
+#vander{
+   left: -4rem; 
+}
+#one-eleven{
+    left: 2rem;
+}
+#two-seventy{
+    left: 0rem;
+}
+#towers-page{
+    background-image: none;
+    background-color: black;
 }
