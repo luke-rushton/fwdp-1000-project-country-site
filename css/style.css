@@ -159,16 +159,16 @@ p{ /* need to find a font for paragraphs! */
     width: 50%;
     margin: auto;
 }
-.one-world{ /*gotta change this name */
+.scatter-display{ /*gotta change this name */
     position: relative;
     margin: 1rem auto;
     width: 50%;
 }
-.one-world img{
+.scatter-display img{
     display: block;
     width: 100%;
 }
-.one-world div{
+.scatter-display div{
     position: absolute;
     top: 0;
     left: 0;
@@ -178,13 +178,13 @@ p{ /* need to find a font for paragraphs! */
     background-color: black;
     opacity: 0;
 }
-.one-world div:hover{
+.scatter-display div:hover{
     opacity: 0.85;
 }
-.one-world h2{
+.scatter-display h2{
     outline: none;
 }
-.one-world p{
+.scatter-display p{
     outline: none;
 }
 main{
@@ -192,6 +192,7 @@ main{
     padding-bottom: 7rem;
 }
 
+/* tower ids */
 #world{
     left: -2rem
 }
@@ -207,7 +208,27 @@ main{
 #two-seventy{
     left: 0rem;
 }
-#towers-page{
+/* food ids */
+#katz{
+    left: 6rem;
+}
+#pizza{
+    left: 0rem;
+}
+#ivan{
+    left: 2rem;
+}
+#donair{
+    left: -4rem;
+}
+#coffee{
+    left: 0rem;
+}
+#towers-page{ /*merge these if they dont end up differen */
+    background-image: none;
+    background-color: black;
+}
+#food-page{
     background-image: none;
     background-color: black;
 }
