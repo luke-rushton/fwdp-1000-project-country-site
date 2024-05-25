@@ -189,7 +189,6 @@ p{ /* need to find a font for paragraphs! */
 }
 main{
     padding-left: 1rem;
-    padding-bottom: 7rem;
 }
 
 /* tower ids */
@@ -231,4 +230,78 @@ main{
 #food-page{
     background-image: none;
     background-color: black;
+}
+#credits-page{
+    background-image: none;
+    background-color: black;
+}
+table{
+    display: block;
+    width: fit-content;
+    margin: auto;
+    border: 5px solid white;
+    font-family: "Oswald", sans-serif;
+    color: white;
+    border-collapse: collapse;
+    background-color: black; /*can remove if background color stays black */
+}
+table td, table th{
+    border: 1px solid white;
+    padding: 0.25rem;
+}
+form{
+    background-color: black;
+    color: white;
+    border: 5px solid white;
+    display: inline-block;
+    padding: 1rem;
+    margin: auto;
+    display: block;
+    width: fit-content;
+}
+form ul{
+    list-style: none;
+    padding: 0;
+}
+label{
+    display: inline-block;
+    text-align: right;
+    min-width: 5rem;
+}
+input, textarea{
+    vertical-align: top;
+    width: 18rem;
+    color: white;
+    background-color: black;
+     border: 2px solid white;
+}
+form li{
+    margin-bottom: 1rem;
+}
+form button{
+    color: white;
+    background-color: black;
+    margin: auto;
+    display: block;
+    border: 2px solid white;
+}
+form button:hover{
+    color: black;
+    background-color: white;
+}
+/* stock image for footer source
+https://stock.adobe.com/ca/search?k=new+york+skyline&as_channel=adobe_apps&as_campclass=brand&as_campaign=CC_Pro_Growth_test&as_source=ccd&as_camptype=refresh&as_audience=CCT_CCE&as_content=90plus_Day_Banner&trackingid=RYGDMW1F&mv%5B%5D=in-product&mv%5B%5D=product&guid=e3406d59-d661-494b-ab95-26943d34e75c&product=Creative+Cloud+Desktop&product-version=6.2.0.554&mv2=&expires_in=86399994&asset_id=141493835
+*/
+#footer-outline{
+    outline: none;
+    background-color: black;
+}
+footer p{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    color: black;
+    margin: 0;
+    padding-bottom: 7rem;
+    outline: 6px solid white;
 }
