@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="splash-page">
     <header>
         <div id="initial"></div>
         <nav id="site-nav">
@@ -22,11 +22,14 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="splash-main">
+        <video autoplay muted loop>
+            <source src="media/manhattan-scape.mp4" type="video/mp4">
+          </video>
         <h1>New York.</h1>
     </main>
     <footer>
-        <img id="footer-outline" src="/media/nyc-skyline-white.svg" alt="new-york-skyline">
+        <img id="splash-footer-outline" src="media/nyc-skyline-white.svg" alt="new-york-skyline">
         <p>for educational purposes only</p>
     </footer>
 </body>
