@@ -212,9 +212,7 @@ form button:hover{
     color: black;
     background-color: white;
 }
-/* stock image for footer source
-https://stock.adobe.com/ca/search?k=new+york+skyline&as_channel=adobe_apps&as_campclass=brand&as_campaign=CC_Pro_Growth_test&as_source=ccd&as_camptype=refresh&as_audience=CCT_CCE&as_content=90plus_Day_Banner&trackingid=RYGDMW1F&mv%5B%5D=in-product&mv%5B%5D=product&guid=e3406d59-d661-494b-ab95-26943d34e75c&product=Creative+Cloud+Desktop&product-version=6.2.0.554&mv2=&expires_in=86399994&asset_id=141493835
-*/
+
 #footer-outline{
     outline: none;
     background-color: black;
@@ -247,7 +245,6 @@ video{
     z-index: -1;
 }
 
-/* https://www.pexels.com/video/new-york-skyline-7171757/ */
 /* media for splash page */
 @media (min-width: 60em){
     h1{
