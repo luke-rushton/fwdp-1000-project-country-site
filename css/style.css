@@ -1,3 +1,4 @@
+/* --BASE STYLES-- */
 h1, h2{
     font-family: "Oswald", sans-serif;
     font-weight: 700;
@@ -11,15 +12,12 @@ h1, h2{
 h1{
     margin-left: 2rem;
 }
-img{
-    height: auto;
-    max-width: 100%;
-
-    /* styling */
-    outline: 5px solid white;
-}
 h2{
     font-size: 1.5rem;
+}
+h3{
+    font-family: "Oswald", sans-serif;
+    text-align: center;
 }
 a{
     font-family: "Oswald", sans-serif;
@@ -29,18 +27,19 @@ a{
     text-align: center;
     display: block;
     position: absolute;
-    /* do I want to align all the text, or have it sit centered? centered fits more with style, but its harder to read */
     left: 5%;
     bottom: 2%;
     font-size: 1.25rem;
+    transition: 0.25s;
 }
-body{
-    background-color: black;
-    min-height: 100vh;
-    max-width: 1920px;
-    margin: auto;
+a:hover{
+    color: grey;
+    transition: 0.25s;
 }
-p{ /* need to find a font for paragraphs! */
+a:focus{
+    color: yellow;
+}
+p{
     color: white;
     font-family: "Shanti", sans-serif;
     outline: 5px solid white;
@@ -48,7 +47,19 @@ p{ /* need to find a font for paragraphs! */
     padding: 10px;
     background-color: black;
 }
+body{
+    background-color: black;
+    min-height: 100vh;
+    max-width: 1920px;
+    margin: auto;
+}
+img{
+    height: auto;
+    max-width: 100%;
+    outline: 5px solid white;
+}
 
+/* --LAYOUTS-- */
 #site-nav{
     position: fixed;
     bottom: 0px;
@@ -73,8 +84,16 @@ p{ /* need to find a font for paragraphs! */
     height: 2rem;
     position: relative;
 }
+#intro{
+    width: 50%;
+    margin: auto;
+}
+#content-page{ 
+    background-image: none;
+    background-color: black;
+}
 
-/* INDIVIDUAL NAV ELEMENTS */
+/* --HEADER STYLES-- */
 #site-nav #one{
     height: 3rem;
 }
@@ -87,13 +106,30 @@ p{ /* need to find a font for paragraphs! */
 #site-nav #four{
     height: 3rem;
 }
-/*Towers page ids */
-/*consider, making classes for disjoint text blocks, can apply at will instead of individual ids */
-#intro{
-    width: 50%;
-    margin: auto;
+
+/* --hero styles-- */
+#splash-main{
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0), black);
 }
-.scatter-display{ /*gotta change this name */
+#splash-footer-outline{
+    background-color: black;
+    outline: none;
+}
+
+video{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    min-width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+/* --Homepage styles-- */
+
+/* --Places styles-- */
+.scatter-display{
     position: relative;
     margin: 1rem auto;
     width: 50%;
@@ -112,9 +148,11 @@ p{ /* need to find a font for paragraphs! */
     width: 100%;
     background-color: black;
     opacity: 0;
+    transition: 0.25s;
 }
 .scatter-display div:hover{
     opacity: 0.85;
+    transition: 0.25s;
 }
 .scatter-display h2{
     outline: none;
@@ -122,7 +160,6 @@ p{ /* need to find a font for paragraphs! */
 .scatter-display p{
     outline: none;
 }
-/* tower ids */
 #world{
     left: -2rem
 }
@@ -138,7 +175,8 @@ p{ /* need to find a font for paragraphs! */
 #two-seventy{
     left: 0rem;
 }
-/* food ids */
+
+/* --Food styles-- */
 #katz{
     left: 6rem;
 }
@@ -154,10 +192,8 @@ p{ /* need to find a font for paragraphs! */
 #coffee{
     left: 0rem;
 }
-#content-page{ /*merge these if they dont end up differen */
-    background-image: none;
-    background-color: black;
-}
+
+/* --Credit styles-- */
 table{
     display: block;
     width: fit-content;
@@ -166,7 +202,6 @@ table{
     font-family: "Oswald", sans-serif;
     color: white;
     border-collapse: collapse;
-    background-color: black; /*can remove if background color stays black */
 }
 table td, table th{
     border: 1px solid white;
@@ -207,12 +242,48 @@ form button{
     margin: auto;
     display: block;
     border: 2px solid white;
+    transition: 0.25s;
 }
 form button:hover{
     color: black;
     background-color: white;
+    transition: 0.25s;
+}
+.source-table{
+    position:static;
+    font-size: 1rem;
+    text-decoration:underline;
+}
+.source-table:visited{
+    color: grey;
+}
+.source-table:focus{
+    color: yellow;
+}
+.source-table-head{
+    font-size: 1.5rem;
+}
+#contact{
+    padding: 2rem;
+}
+#form p{
+    padding: 0;
+    border: none;
+}
+#credit-page #credit-title{
+    margin-left: 0%;
+    margin: 2rem auto;
+}
+blockquote{
+    color: white;
+    border: 5px solid white;
+    padding: 0.5rem;
+    max-width: 20rem;
+    margin: 1rem auto;
+    font-family: "Oswald", sans-serif;
 }
 
+/* --footer styles-- */
 #footer-outline{
     outline: none;
     background-color: black;
@@ -226,37 +297,12 @@ footer p{
     padding-bottom: 7rem;
     outline: 6px solid white;
 }
-#splash-main{
-    min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0), black);
-}
-#splash-footer-outline{
-    background-color: black;
-    outline: none;
-}
 
-video{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100vh;
-    min-width: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
+/* --MEDIA QUERIES-- */
 
-/* media for splash page */
 @media (min-width: 60em){
-    h1{
-        font-size: 6rem;
-    }
-    #content-page h1{
-        margin-left: 20%;
-    }
-    #splash-page #site-nav{
-        position: relative;
-        height: 0;
-    }
+    /* --layouts --*/
+    /* --nav styles --*/
     #site-nav a {
         position: absolute;
         background-color: black;
@@ -269,6 +315,14 @@ video{
         background: none;
         outline: none;
         width: 1rem;
+    }
+    /* --homepage styles-- */
+    h1{
+        font-size: 6rem;
+    }
+    #splash-page #site-nav{
+        position: relative;
+        height: 0;
     }
     #splash-page #site-nav ul{
         display: contents;
@@ -289,10 +343,10 @@ video{
         left: 48%;
         top: 33rem;
     }
-    footer p{
-        padding-bottom: 1rem;
+    /* --places styles-- */
+    #content-page h1{
+        margin-left: 20%;
     }
-    /*other pages */
     #content-page #site-nav ul{
         display: block;
     }
@@ -331,6 +385,7 @@ video{
     #content-page #credit-page{
         display: block;
     }
+    /** --food page-- */
     #katz{
         left: 1rem;
     }
@@ -345,5 +400,9 @@ video{
     }
     #coffee{
         left: 0rem;
+    }
+    /*--footer styles--*/
+    footer p{
+        padding-bottom: 1rem;
     }
 }
