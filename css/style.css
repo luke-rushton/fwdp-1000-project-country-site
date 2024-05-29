@@ -111,14 +111,12 @@ video{
     min-height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0), black);
 }
-/* --Homepage styles-- */
 
 /* --Places styles-- */
 .scatter-display{
     position: relative;
     margin: 1rem auto;
-    width: 50%;
-    max-width: 20rem;
+    max-width: 18rem;
 }
 .scatter-display div{
     position: absolute;
@@ -141,38 +139,8 @@ video{
 .scatter-display p{
     outline: none;
 }
-#world{
-    left: -2rem
-}
-#empire{
-    left: 5rem;
-}
-#vander{
-   left: -4rem; 
-}
-#one-eleven{
-    left: 2rem;
-}
-#two-seventy{
-    left: 0rem;
-}
-
 /* --Food styles-- */
-#katz{
-    left: 6rem;
-}
-#pizza{ /*technically does nothing but leaving in to maintain consistency */
-    left: 0rem;
-}
-#ivan{
-    left: 2rem;
-}
-#donair{
-    left: -4rem;
-}
-#coffee{
-    left: 0rem;
-}
+
 
 /* --Credit styles-- */
 #form-title{
@@ -198,16 +166,12 @@ form{
     margin: auto;
     width: fit-content;
 }
-form ul{
-    list-style: none;
-    padding: 0;
-}
 input, textarea{
     vertical-align: top;
-    width: 18rem;
-     border: 2px solid white;
+    max-width: 18rem;
+    border: 2px solid white;
 }
-form li{
+form div{
     display: flex;
     justify-content: space-between;
     gap: 0.25rem;
@@ -239,7 +203,7 @@ form button:hover{
     font-size: 1.5rem;
 }
 #contact{
-    padding: 2rem;
+    padding-top: 2rem;
 }
 #form p{
     padding: 0;
