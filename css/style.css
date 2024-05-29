@@ -159,7 +159,7 @@ video{
 #katz{
     left: 6rem;
 }
-#pizza{
+#pizza{ /*technically does nothing but leaving in to maintain consistency */
     left: 0rem;
 }
 #ivan{
