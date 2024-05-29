@@ -1,27 +1,20 @@
 /* --BASE STYLES-- */
 h1, h2{
-    font-family: "Oswald", sans-serif;
     font-weight: 700;
-    font-size: 3rem;
-    color: white;
     outline: 5px solid white;
     width: fit-content;
     padding: 10px;
-    background-color: black;
 }
 h1{
     margin-left: 2rem;
+    background-color: black;
 }
 h2{
     font-size: 1.5rem;
 }
-h3{
-    font-family: "Oswald", sans-serif;
-    text-align: center;
-}
 a{
-    font-family: "Oswald", sans-serif;
     color: white;
+    background-color: black;
     font-weight: 600;
     text-decoration: none;
     text-align: center;
@@ -40,18 +33,18 @@ a:focus{
     color: yellow;
 }
 p{
-    color: white;
     font-family: "Shanti", sans-serif;
     outline: 5px solid white;
     width: fit-content;
     padding: 10px;
-    background-color: black;
 }
 body{
+    font-family: "Oswald", sans-serif;
     background-color: black;
     min-height: 100vh;
     max-width: 1920px;
     margin: auto;
+    color: white;
 }
 img{
     height: auto;
@@ -79,8 +72,8 @@ img{
     align-items: end;
 }
 #site-nav li{
-    outline: 5px solid white;
     background-color: black;
+    outline: 5px solid white;
     height: 2rem;
     position: relative;
 }
@@ -90,7 +83,6 @@ img{
 }
 #content-page{ 
     background-image: none;
-    background-color: black;
 }
 
 /* --HEADER STYLES-- */
@@ -113,7 +105,6 @@ img{
     background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0), black);
 }
 #splash-footer-outline{
-    background-color: black;
     outline: none;
 }
 
@@ -146,11 +137,11 @@ video{
     right: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
     opacity: 0;
     transition: 0.25s;
 }
 .scatter-display div:hover{
+    background-color: black;
     opacity: 0.85;
     transition: 0.25s;
 }
@@ -194,13 +185,19 @@ video{
 }
 
 /* --Credit styles-- */
+#form-title{
+    text-align: center;
+    font-size: 1.5rem;
+    outline: none;
+    width: 100%;
+    margin-top: 0px;
+}
 table{
     display: block;
     width: fit-content;
     margin: auto;
     border: 5px solid white;
-    font-family: "Oswald", sans-serif;
-    color: white;
+    font-family: "Shanti", sans-serif;
     border-collapse: collapse;
 }
 table td, table th{
@@ -208,14 +205,13 @@ table td, table th{
     padding: 0.25rem;
 }
 form{
-    background-color: black;
-    color: white;
     border: 5px solid white;
     display: inline-block;
     padding: 1rem;
     margin: auto;
     display: block;
     width: fit-content;
+    font-family: "Shanti", sans-serif;
 }
 form ul{
     list-style: none;
@@ -229,16 +225,12 @@ label{
 input, textarea{
     vertical-align: top;
     width: 18rem;
-    color: white;
-    background-color: black;
      border: 2px solid white;
 }
 form li{
     margin-bottom: 1rem;
 }
 form button{
-    color: white;
-    background-color: black;
     margin: auto;
     display: block;
     border: 2px solid white;
@@ -275,18 +267,16 @@ form button:hover{
     margin: 2rem auto;
 }
 blockquote{
-    color: white;
     border: 5px solid white;
     padding: 0.5rem;
     max-width: 20rem;
     margin: 1rem auto;
-    font-family: "Oswald", sans-serif;
+    font-family: "Shanti", sans-serif;
 }
 
 /* --footer styles-- */
 #footer-outline{
     outline: none;
-    background-color: black;
 }
 footer p{
     background-color: white;
@@ -305,7 +295,6 @@ footer p{
     /* --nav styles --*/
     #site-nav a {
         position: absolute;
-        background-color: black;
         display: block;
         font-size:4rem;
         outline: 5px solid white;
@@ -384,6 +373,21 @@ footer p{
     }
     #content-page #credit-page{
         display: block;
+    }
+    #world{
+        left: -3rem
+    }
+    #empire{
+        left: 1rem;
+    }   
+    #vander{
+        left: -4rem; 
+    }
+    #one-eleven{
+        left: -1rem;
+    }
+    #two-seventy{
+        left: 0rem;
     }
     /** --food page-- */
     #katz{
