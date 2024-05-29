@@ -42,8 +42,10 @@ body{
 img{
     outline: 5px solid white;
 }
-p{
+p, table, blockquote, form{
     font-family: "Shanti", sans-serif;
+}
+p{
     outline: 5px solid white;
     /* width: fit-content; */
     padding: 10px;
@@ -184,7 +186,7 @@ table{
     width: fit-content;
     margin: auto;
     border: 5px solid white;
-    font-family: "Shanti", sans-serif;
+    border-collapse: collapse;
 }
 table td, table th{
     border: 1px solid white;
@@ -195,7 +197,6 @@ form{
     padding: 1rem;
     margin: auto;
     width: fit-content;
-    font-family: "Shanti", sans-serif;
 }
 form ul{
     list-style: none;
@@ -207,6 +208,9 @@ input, textarea{
      border: 2px solid white;
 }
 form li{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.25rem;
     margin-bottom: 1rem;
 }
 form button{
@@ -246,7 +250,6 @@ blockquote{
     padding: 0.5rem;
     max-width: 20rem;
     margin: 1rem auto;
-    font-family: "Shanti", sans-serif;
 }
 
 /* --footer styles-- */
