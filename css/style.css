@@ -76,7 +76,7 @@ p{
     position: relative;
 }
 #intro{
-    width: 50%;
+    max-width: 18rem;
     margin: auto;
 }
 #content-page{ 
@@ -155,6 +155,7 @@ table{
     margin: auto;
     border: 5px solid white;
     border-collapse: collapse;
+    max-width: 90%;
 }
 table td, table th{
     border: 1px solid white;
@@ -165,6 +166,7 @@ form{
     padding: 1rem;
     margin: auto;
     width: fit-content;
+    max-width: 90%;
 }
 input, textarea{
     vertical-align: top;
@@ -212,7 +214,8 @@ form button:hover{
 blockquote{
     border: 5px solid white;
     padding: 0.5rem;
-    max-width: 20rem;
+    width: fit-content;
+    max-width: 90%;
     margin: 1rem auto;
 }
 
@@ -278,6 +281,9 @@ footer p{
         top: 33rem;
     }
     /* --places styles-- */
+    #intro{
+        max-width: 30rem;
+    }
     #content-page #site-nav ul{
         display: block;
     }
